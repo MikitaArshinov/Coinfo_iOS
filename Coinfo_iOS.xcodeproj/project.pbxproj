@@ -13,7 +13,8 @@
 		07A24D7B29A5161600BE6C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A24D7929A5161600BE6C90 /* Main.storyboard */; };
 		07A24D7D29A5161800BE6C90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A24D7C29A5161800BE6C90 /* Assets.xcassets */; };
 		07A24D8029A5161900BE6C90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A24D7E29A5161900BE6C90 /* LaunchScreen.storyboard */; };
-		07A24D9729A5248100BE6C90 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A24D9629A5248100BE6C90 /* R.generated.swift */; };
+		07A24D9A29A5250200BE6C90 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A24D9929A5250200BE6C90 /* Colors.xcassets */; };
+		07A24D9C29A5289A00BE6C90 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A24D9B29A5289A00BE6C90 /* R.generated.swift */; };
 		FF9D1A80873CE53B07781E74 /* Pods_Coinfo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8640CADABC9FD431A24C31 /* Pods_Coinfo_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +27,8 @@
 		07A24D7C29A5161800BE6C90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07A24D7F29A5161900BE6C90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07A24D8129A5161900BE6C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07A24D9629A5248100BE6C90 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		07A24D9929A5250200BE6C90 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		07A24D9B29A5289A00BE6C90 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		219DBE880BCB2DA95BF9CAD7 /* Pods-Coinfo_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coinfo_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Coinfo_iOS/Pods-Coinfo_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4E34C4B17531F46710AE9D7D /* Pods-Coinfo_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coinfo_iOS.release.xcconfig"; path = "Target Support Files/Pods-Coinfo_iOS/Pods-Coinfo_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		CA8640CADABC9FD431A24C31 /* Pods_Coinfo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coinfo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 		07A24D9329A523E400BE6C90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				07A24D9829A524EC00BE6C90 /* Colors */,
 				07A24D9429A523F100BE6C90 /* Generated */,
 			);
 			path = Resources;
@@ -96,9 +99,17 @@
 		07A24D9429A523F100BE6C90 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				07A24D9629A5248100BE6C90 /* R.generated.swift */,
+				07A24D9B29A5289A00BE6C90 /* R.generated.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		07A24D9829A524EC00BE6C90 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				07A24D9929A5250200BE6C90 /* Colors.xcassets */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 		A6BF98CFDDEBE13D113B5EE3 /* Frameworks */ = {
@@ -180,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A24D8029A5161900BE6C90 /* LaunchScreen.storyboard in Resources */,
+				07A24D9A29A5250200BE6C90 /* Colors.xcassets in Resources */,
 				07A24D7D29A5161800BE6C90 /* Assets.xcassets in Resources */,
 				07A24D7B29A5161600BE6C90 /* Main.storyboard in Resources */,
 			);
@@ -201,7 +213,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				" $SRCROOT/R.generated.swift",
+				" $SRCROOT/Coinfo_iOS/Core/Resources/Generated/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -256,7 +268,7 @@
 				07A24D7829A5161600BE6C90 /* ViewController.swift in Sources */,
 				07A24D7429A5161600BE6C90 /* AppDelegate.swift in Sources */,
 				07A24D7629A5161600BE6C90 /* SceneDelegate.swift in Sources */,
-				07A24D9729A5248100BE6C90 /* R.generated.swift in Sources */,
+				07A24D9C29A5289A00BE6C90 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
