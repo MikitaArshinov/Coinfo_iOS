@@ -142,6 +142,7 @@
 				07A24D6D29A5161600BE6C90 /* Frameworks */,
 				07A24D6E29A5161600BE6C90 /* Resources */,
 				73A16743025239F2DBAE9BD5 /* [CP] Embed Pods Frameworks */,
+				073EEC4129A5391F004185E5 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -200,6 +201,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		073EEC4129A5391F004185E5 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+		};
 		07A24D9529A523FC00BE6C90 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
