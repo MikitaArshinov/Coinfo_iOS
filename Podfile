@@ -7,4 +7,9 @@ target 'Coinfo_iOS' do
 
   # Pods for Coinfo_iOS
 
+	pod 'Then'
+	pod 'SnapKit'
+	pod 'SwiftLint'
+	pod 'R.swift'
+
 end
