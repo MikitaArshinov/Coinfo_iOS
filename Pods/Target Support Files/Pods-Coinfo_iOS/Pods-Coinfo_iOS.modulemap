@@ -1,0 +1,6 @@
+framework module Pods_Coinfo_iOS {
+  umbrella header "Pods-Coinfo_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
